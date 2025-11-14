@@ -8,8 +8,6 @@ from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.checkpoint.postgres import PostgresSaver
 from deepagents.backends import CompositeBackend, StateBackend, StoreBackend
 
-
-
 def get_long_term_store():
     """Return (store, checkpointer, backend) for long-term memory.
 
