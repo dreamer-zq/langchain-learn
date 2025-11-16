@@ -21,7 +21,7 @@ def get_long_term_store():
         raise RuntimeError("DATABASE_URL is required for long-term store")
 
     try:
-        store_cm = PostgresStore.from_conn_string(db_url)
+        store_cm = PostgresStore.from_conn_string(db_url, ttl={"default_ttl": 60 * 5})
         check_cm = PostgresSaver.from_conn_string(db_url)
         store = store_cm.__enter__()
         checkpointer = check_cm.__enter__()
