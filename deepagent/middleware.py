@@ -113,7 +113,7 @@ def build_demo_agent():
     return agent
 
 
-def demo_login_example():
+def example_demo_login():
     """Demonstrate login gating: before login blocked, after login allowed.
 
     1) Invoke agent without authentication and capture the auth-required message.

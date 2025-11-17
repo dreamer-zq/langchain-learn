@@ -15,7 +15,7 @@ llm = deepseek_model(
 system_prompt = "You are an expert researcher. Conduct thorough research and write a polished report."
 
 
-def process_long_term_memory():
+def example_long_term_memory():
     """Exercise long-term memory persistence across threads using StoreBackend.
 
     Steps:
@@ -76,7 +76,7 @@ def process_long_term_memory():
     print("[B] read result:", read_res_b["messages"][ -1 ].content)
 
 
-def process_short_term_memory():
+def example_short_term_memory():
     """Exercise short-term (ephemeral) memory behavior using StateBackend.
 
     Steps:

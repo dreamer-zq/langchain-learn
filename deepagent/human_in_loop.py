@@ -30,7 +30,7 @@ def send_email(to: str, subject: str, body: str) -> str:
     return f"Sent email to {to}"
 
 
-def human_in_the_loop():
+def example_human_in_the_loop():
     """Run the agent with human-in-the-loop."""
 
     llm = deepseek_model(
